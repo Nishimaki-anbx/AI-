@@ -11,6 +11,9 @@ Thumbs.db
 # Logs
 *.log
 
+# Local task agent data
+.task-agent/
+
 # Environment
 .env
 .env.*
@@ -27,4 +30,3 @@ venv/
 node_modules/
 dist/
 coverage/
-

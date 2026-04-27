@@ -28,6 +28,21 @@
 - [docs/ai-development-playbook.md](docs/ai-development-playbook.md): AI 支援作業の実践ガイド
 - [docs/design/task-agent-mvp.md](docs/design/task-agent-mvp.md): タスク管理エージェント MVP の設計メモ
 
+## タスク管理エージェント MVP
+
+ローカル JSON 保存の CLI として、最初のタスク管理エージェントを実装しています。
+
+```powershell
+node bin/task-agent.js add "README を見直す" --priority medium
+node bin/task-agent.js list
+node bin/task-agent.js update task-001 --status doing
+node bin/task-agent.js note task-001 "対応方針を確認した"
+node bin/task-agent.js show task-001
+```
+
+既定の保存先は `.task-agent/tasks.json` です。
+別の保存先を使う場合は `--data-file path/to/tasks.json` を指定します。
+
 ## 初期方針
 
 - 変更は小さくし、Pull Request は短期間で完了させる
