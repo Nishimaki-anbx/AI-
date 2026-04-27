@@ -26,6 +26,7 @@
 - [CONTRIBUTING.md](CONTRIBUTING.md): 日々の作業フロー
 - [docs/github-setup-checklist.md](docs/github-setup-checklist.md): 推奨する GitHub 設定
 - [docs/ai-development-playbook.md](docs/ai-development-playbook.md): AI 支援作業の実践ガイド
+- [docs/design/task-agent-mvp.md](docs/design/task-agent-mvp.md): タスク管理エージェント MVP の設計メモ
 
 ## 初期方針
 
