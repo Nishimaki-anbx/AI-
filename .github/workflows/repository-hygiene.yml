@@ -7,6 +7,20 @@ on:
       - main
 
 jobs:
+  test-task-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Test task agent
+        run: npm test
+
   lint-docs-and-workflows:
     runs-on: ubuntu-latest
     steps:
@@ -34,4 +48,3 @@ jobs:
                 level: warning
               truthy:
                 allowed-values: ["true", "false", "on"]
-

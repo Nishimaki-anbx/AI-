@@ -1,0 +1,16 @@
+{
+  "name": "ai-task-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local JSON-backed task management agent MVP.",
+  "type": "commonjs",
+  "bin": {
+    "task-agent": "bin/task-agent.js"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
